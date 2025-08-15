@@ -61,6 +61,17 @@ public class Main {
             public int hashCode() {
 
                 return Objects.hash(x, y);
+
+                   public class AStarSearch {
+
+                static int[][] grid = (
+                
+                        {0,0,0,0,0},
+                        {0,0,1,0,0},
+                        {0,0,1,0,0},
+                        {0,1,0,0,0},
+                        {0,0,0,0,0},
+                                };             
             }
 
         }
