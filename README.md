@@ -71,7 +71,80 @@ public class Main {
                         {0,0,1,0,0},
                         {0,1,0,0,0},
                         {0,0,0,0,0},
-                                };             
+                                };
+
+            Node current openSet.poll();
+
+if (current.equals (goal) 
+                ) {
+
+List<Node> path new ArrayList<>();
+
+                while (current  {
+                    le 
+                }
+                null) path.add(current);
+
+                current current.parent;
+
+                Collections.reverse(path);
+
+                return path;
+
+                closedSet.add(current);
+
+                for (int[] dir : new int[][][ {
+                    (1
+                }
+                
+                    ,0), (-1,0), (0,1), (0,-1))) { int nx current.x dir[
+                    0], ny current
+                    .y dir[
+                    1]; if (nx >= 0 && ny >= 0 && nx < ROWS && ny < COLS && grid[nx][ny]  {
+                        0
+                    }
+                    ) (
+
+             Node neighbor new Node(nx, ny);
+                    if (closedSet.contains(neighbor)) {
+                        continue;
+                    }
+
+                    double tentative current.gcost + 1;
+
+                    boolean better = false;
+
+                    if (lopenSet.contains(neighbor)) {
+                        (
+
+       neighbor.hcost Math.abs(  nx goal.x) Math.abs(ny
+                                - goal.y);
+                    } else if (tentatived  {
+                        neighbor.gCost
+                    }) <
+
+               better true;
+
+              better true;
+
+              If(better) (
+
+                 neighbor.gCost tentatives;
+
+                    neighbor.parent current;
+
+                    openSet.add(neighbor);
+                                
+                                      
+                                
+                
+                
+            }
+
+        }
+
+
+                                
             }
 
         }
